@@ -46,7 +46,7 @@ const Memos = () => {
                         No coffee orders yet. Be the first to buy! ☕
                     </div>
                 ) : (
-                    memos.map((memo, index) => {
+                    [...memos].reverse().map((memo, index) => {
                         return (
                             <div key={memo.timestamp || index} className="memo-card">
                                 <div className="memo-header">
